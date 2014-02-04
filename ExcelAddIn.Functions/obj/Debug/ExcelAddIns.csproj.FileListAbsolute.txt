@@ -1,0 +1,6 @@
+C:\Users\paul.davey\Documents\Visual Studio 2013\Projects\CodeSharper\ExcelAddIn.Functions\ExcelAddIn.Functions\bin\Debug\Functions.dna
+C:\Users\paul.davey\Documents\Visual Studio 2013\Projects\CodeSharper\ExcelAddIn.Functions\ExcelAddIn.Functions\bin\Debug\Functions.xll
+C:\Users\paul.davey\Documents\Visual Studio 2013\Projects\CodeSharper\ExcelAddIn.Functions\ExcelAddIn.Functions\bin\Debug\ExcelAddIn.Functions.dll
+C:\Users\paul.davey\Documents\Visual Studio 2013\Projects\CodeSharper\ExcelAddIn.Functions\ExcelAddIn.Functions\bin\Debug\ExcelAddIn.Functions.pdb
+C:\Users\paul.davey\Documents\Visual Studio 2013\Projects\CodeSharper\ExcelAddIn.Functions\ExcelAddIn.Functions\obj\Debug\ExcelAddIn.Functions.dll
+C:\Users\paul.davey\Documents\Visual Studio 2013\Projects\CodeSharper\ExcelAddIn.Functions\ExcelAddIn.Functions\obj\Debug\ExcelAddIn.Functions.pdb
