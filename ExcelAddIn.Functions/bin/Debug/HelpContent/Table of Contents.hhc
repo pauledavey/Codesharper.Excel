@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</head>
+<body>
+	<object type="text/site	properties">
+		<param name="ImageType" value="Folder">
+	</object>
+	<ul>
+		<li> <object type="text/sitemap">
+				<param name="Name" value="ExcelAddIns Add-In">
+				<param name="Local" value="index.htm">
+			</object>
+		</li>
+		<ul>
+				<li> <object type="text/sitemap">
+						<param name="Name" value="ExcelAddIns Add-In Functions">
+						<param name="Local" value="ExcelAddIns Add-In Functions.htm">
+					</object>
+				</li>
+				<ul>
+						<li> <object type="text/sitemap">
+								<param name="Name" value="CodesharperTestFunction">
+								<param name="Local" value="CodesharperTestFunction.htm">
+							</object>
+						</li>
+						<li> <object type="text/sitemap">
+								<param name="Name" value="ColourCount">
+								<param name="Local" value="ColourCount.htm">
+							</object>
+						</li>
+						<li> <object type="text/sitemap">
+								<param name="Name" value="CountDistinct">
+								<param name="Local" value="CountDistinct.htm">
+							</object>
+						</li>
+						<li> <object type="text/sitemap">
+								<param name="Name" value="WordCount">
+								<param name="Local" value="WordCount.htm">
+							</object>
+						</li>
+				</ul>
+					</ul>
+	</ul>
+</body>
+</html>

@@ -19,27 +19,10 @@
 
     public class ColourCountFunction : IExcelAddIn
     {
+        /// <summary>
+        /// Dictionary for holding cell colours so we can correctly count and match them
+        /// </summary>
         private static Dictionary<int, CellColourInformation> cellColours = new Dictionary<int, CellColourInformation>();
-
-        ///// <summary>
-        ///// Recalculate Method handler for recalcing selected formula cells
-        ///// </summary>
-        ///// <param name="myInputRange">Selection in the sheet</param>
-        //[ExcelCommand(Description = "Recalculate if it is one of our formulas", MenuName = "Colour Count", MenuText = "Recalc Selection")]
-        //public static void Recalculate([ExcelArgument(AllowReference = true)] object myInputRange)
-        //{
-        //    dynamic appHandle = ExcelDnaUtil.Application;
-        //    dynamic worksheetHandle = appHandle.ActiveSheet;
-
-
-        //    if (appHandle.Selection == null)
-        //    {
-        //        return;
-        //    }
-
-        //    RecalculateFormulas(appHandle.Selection);
-        //}
-
 
         /// <summary>
         /// This is the FUNCTON Extension main method
@@ -47,7 +30,7 @@
         /// <param name="myInput">The selection range from the spreadsheet</param>
         /// <returns></returns>
         [ExcelFunction(Description = "Colour Count Function", IsMacroType = true)]
-        public static int ColourCount([ExcelArgument(AllowReference = true)] object myInputRange, [ExcelArgument(AllowReference = true)] object myInputColour)
+        public static int ColourCount([ExcelArgument(AllowReference = true, Name = "Range of cells to search in")] object myInputRange, [ExcelArgument(AllowReference = true, Name = "Cell that contains the colour we want to count for")] object myInputColour)
         {
             cellColours.Clear();
             ExcelReference myInputRef = myInputRange as ExcelReference;

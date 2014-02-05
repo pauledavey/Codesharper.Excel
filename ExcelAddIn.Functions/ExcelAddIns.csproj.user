@@ -3,6 +3,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>C:\Program Files\Microsoft Office\Office15\EXCEL.EXE</StartProgram>
-    <StartArguments>"C:\Users\paul.davey\Documents\GitHub\Codesharper.Excel\ExcelAddIn.Functions\bin\Debug\Functions.xll"</StartArguments>
+    <StartArguments>"C:\Users\paul.davey\Documents\GitHub\Codesharper.Excel\ExcelAddIn.Functions\bin\Debug\ExcelAddIns-AddIn.xll"</StartArguments>
   </PropertyGroup>
 </Project>

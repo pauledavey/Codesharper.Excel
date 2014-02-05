@@ -24,7 +24,7 @@ namespace ExcelAddIn.Functions.Functions
         /// <param name="exactMatch">Exact Match (Inc. Case) or contains (ignore case)</param>
         /// <returns></returns>
         [ExcelFunction(Description = "Word Count Function", IsMacroType = true)]
-        public static int WordCount([ExcelArgument(AllowReference = true)] object myInputRange, [ExcelArgument(AllowReference = true)] object myInputWord, [ExcelArgument(AllowReference = true)] bool exactMatch)
+        public static int WordCount([ExcelArgument(AllowReference = true, Name = "Selected range in worksheet")] object myInputRange, [ExcelArgument(AllowReference = true, Name = "The word that you want to search for")] object myInputWord, [ExcelArgument(AllowReference = true, Name = "Exactly match the word (case sensitive), or match if the target cell contains (case insensitive)")] bool exactMatch)
         {
             wordCounts.Clear();
             ExcelReference myInputRef = myInputRange as ExcelReference;

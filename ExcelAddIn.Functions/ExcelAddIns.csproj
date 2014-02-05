@@ -37,8 +37,9 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ExcelDna.Integration">
-      <HintPath>..\..\..\..\..\ExcelDNA\Distribution\ExcelDna.Integration.dll</HintPath>
+    <Reference Include="ExcelDna.Integration, Version=0.30.4718.347, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Excel-DNA.0.30.3\lib\ExcelDna.Integration.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -51,11 +52,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Functions\ColourCount\ColourCountFunction.cs" />
+    <Compile Include="Functions\CountDistinct\CountDistinctFunction.cs" />
     <Compile Include="Functions\Test Function\TestFunction.cs" />
     <Compile Include="Functions\WordCount\WordCountFunction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Functions.dna">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -64,6 +67,10 @@
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo F | xcopy "C:\Users\paul.davey\Documents\GitHub\Codesharper.Excel\packages\Excel-DNA.0.30.3\tools\ExcelDna.xll" "$(TargetDir)ExcelAddIns-AddIn.xll" /C /Y
+"C:\Users\paul.davey\Documents\GitHub\Codesharper.Excel\packages\Excel-DNA.0.30.3\tools\ExcelDnaPack.exe" "$(TargetDir)ExcelAddIns-AddIn.dna" /Y</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
